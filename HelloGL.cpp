@@ -51,7 +51,7 @@ GLushort HelloGL::indices[] = { 0, 1, 2,  2, 3, 0,      // front
 				1, 6, 7,  7, 2, 1,      // left
 				7, 4, 3,  3, 2, 7,      // bottom
 				4, 7, 6,  6, 5, 4 };    // back
-
+//testing because I hate github but I don't want to lose work
 
 
 
