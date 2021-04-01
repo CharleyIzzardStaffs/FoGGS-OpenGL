@@ -1,5 +1,6 @@
 #include "GLUTCallbacks.h"
 #include "HelloGL.h"
+
 namespace GLUTCallbacks
 {
 	namespace
@@ -26,9 +27,5 @@ namespace GLUTCallbacks
 		updateTime = glutGet(GLUT_ELAPSED_TIME) - updateTime;
 
 		glutTimerFunc(preferredRefresh - updateTime, GLUTCallbacks::Timer, preferredRefresh);
-	}
-	void Keyboard(unsigned char key, int x, int y)
-	{
-		helloGL->Keyboard(key, x, y);
 	}
 }
