@@ -22,13 +22,13 @@ void Cube::Draw()
 	glPushMatrix();
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_COLOR_ARRAY);
-	
+
 	glVertexPointer(3, GL_FLOAT, 0, indexedVertices);
 	glColorPointer(3, GL_FLOAT, 0, indexedColors);
-	
+
 	glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, indices);
 	glRotatef(_rotation, 1.0f, 0.0f, 0.0f);
-	
+
 	glDisableClientState(GL_COLOR_ARRAY);
 	glDisableClientState(GL_VERTEX_ARRAY);
 	glPopMatrix();
