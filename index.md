@@ -3,7 +3,7 @@
 You can use the [editor on GitHub](https://github.com/CharleyIzzardStaffs/FoGGS-OpenGL/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 This Project was to create 3D objects using C++ with the OpenGL Library. 
-
+![image](foggs work sem2.png)
 ```markdown
 Syntax highlighted code block
 
