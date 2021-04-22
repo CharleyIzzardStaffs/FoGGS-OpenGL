@@ -7,23 +7,19 @@
 #include "SceneObject.h"
 #include "fstream"
 #include "iostream"
-#include "Texture2D.h"
 
-class Cube : public SceneObject {
+class Pyramid : public SceneObject
+{
 private:
 	static Vertex* indexedVertices;
-	//static Color* indexedColors;
+	static Color* indexedColors;
 	static GLushort* indices;
-	static int numVertices, numIndices;
-	GLfloat _rotation;
+	static int numVertices, numColors, numIndices;
 	Vector3 _position;
-	GLfloat _FlyingSpeed;
 public:
-	Cube(Mesh* mesh, Texture2D* texture, float x, float y, float z);
-	~Cube();
+	Pyramid(Mesh* mesh, float x, float y, float z);
+	~Pyramid();
 	//Mesh* _mesh;
 	void Draw();
 	void Update();
-	void Materials();
-	Material* _material;
 };
